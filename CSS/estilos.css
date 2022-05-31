@@ -1,0 +1,279 @@
+/*Para toda la página*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    display: inline-flex;
+    position: sticky;
+}
+
+
+.menu {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.menu a {
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
+
+.menu a:hover{
+    background: rgba(37, 37, 43); /*Transición de fondo de la barra de Navegación*/
+}
+
+@media (max-width:760px) {
+    header label{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+
+    }
+
+
+    .logo{
+        display: none;
+    }
+}
+
+@media (max-width:480px) {
+    form{
+        width: 100%;
+    }
+
+    .logo{
+        display: none;
+    }
+}
+
+
+.logo {
+    max-width: 100%;
+    width: 20%;
+    height: 250px;
+
+}
+
+
+
+
+
+nav {
+    width: 80%;
+    height: 200px;
+    font-size: 1.5em;
+    justify-content: space-between;
+
+}
+
+footer div p{
+    width: 100%;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 5ex;
+    background-color: rgb(37, 37, 43);
+}
+
+#spotify {
+    margin: 20px;
+    padding: 50px;
+}
+
+#instagram{
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+   
+
+.block{
+    padding: 40px;
+    margin: 40px;
+}
+
+
+
+
+/* Slider - index*/
+.container {
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    width: 800px;
+    padding: 30px;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.slider {
+    position: relative;
+    width: 800px;
+    height: 500px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+}
+
+ul.slider li img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1;
+}
+
+ul.slider li:target {
+    opacity: 1;
+}
+
+.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(37, 37, 43);
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+/*Fin Slider*/
+
+/*Estilo Galeria*/
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 25px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/*Fin Estilo Galeria*/
+
+/*Estilo Formulario*/
+
+form{
+    width: 450px;
+    margin: auto;
+    background: rgb(37, 37, 43);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 80px;
+    border-radius: 15px;
+
+}
+
+h2 {
+    color: whitesmoke;
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+    background: #31384a;
+    color: #fff;
+    padding: 20px;
+
+}
+
+#boton:hover{
+    cursor:pointer;
+    background: darkslateblue; /*Transición de fondo y del cursor del boton enviar*/
+}
+
+
+/*Estilo about*/
+
+#about{
+    margin: 10px;
+    padding: 10px;
+    font-size: 2.5 em;
+    text-align: left;
+    color: whitesmoke;
+}
+
+.info {
+    border: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.7em;
+    color: whitesmoke;
+}
